@@ -146,14 +146,10 @@
                                 </div>
                                 <div class="cont">
                                     <ul>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
+                                        <li><a href="#"><h6>{{ i.title|truncatechars:'30' }}</h6></a></li>
                                     </ul>
                                     <br>
-                                    <a href="#"><h4>{{ i.title }}</h4></a>
+                                    <a href="#"><h4>{{ i.text|truncatechars:'30' }}</h4></a>
                                     <p><b>{{ i.price }} so'm</b></p>
                                 </div>
 

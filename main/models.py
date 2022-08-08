@@ -18,10 +18,18 @@ class Teacher(models.Model):
     last_anme = models.CharField(max_length=250)
     jobs = models.CharField(max_length=250)
 
+
+    def __str__(self):
+        return self.last_anme
+
 class New(models.Model):
     img = models.ImageField(upload_to='images/')
     name = models.TextField()
     text = models.TextField()
+
+
+    def __str__(self):
+        return self.name
 
 
 class Contact(models.Model):
